@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/media.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container-fluid header">
+    <div class="row">
+        <div class="col-lg-12 header_menu col-md-12 col-sm-12 col-xs-12">
+            <div class="header_logo">
+                <span class="logo_span1">Purple </span>
+                <span class="logo_span2"> Buzz</span>
+            </div>
+            <div class="menu">
+                <ul id="menu_ul">
+                    <li><a href="index.html" class="a1">Home</a></li>
+                    <li><a href="about.html" class="a2">About</a></li>
+                    <li><a href="work.html" class="a3">Work</a></li>
+                    <li><a href="pricing.html" class="a4">Pricing</a></li>
+                    <li><a href="contact.html" class="a5">Contact</a></li>
+                </ul>
+            </div>
+            <div class="header_icons">
+                <a><i class="fa-regular fa-bell"></i></a>
+                <a><i class="fa-solid fa-gear"></i></a>
+                <a id="user"><i class="fa-regular fa-circle-user"></i></a>
+                <form id="login_form">
+                    <a href="#" id="login_close"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="login">
+                        <span>Login</span>
+                        <div class="input-container ic1">
+                            <input id="username" class="input" type="text" placeholder=" "/>
+                            <div class="cut"></div>
+                            <label for="username" class="placeholder">Username</label>
+                        </div>
+                        <div class="input-container ic2">
+                            <input id="pass" class="input" type="text" placeholder=" "/>
+                            <div class="cut"></div>
+                            <label for="pass" class="placeholder">Password</label>
+                        </div>
+                        <button id="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="menu2">
+                <button id="btn_menu2"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div id="menu2_ul">
+                <ul class="menu_ul2">
+                    <li><a href="index.html" class="a1">Home</a></li>
+                    <li><a href="about.html" class="a2">About</a></li>
+                    <li><a href="work.html" class="a3">Work</a></li>
+                    <li><a href="pricing.html" class="a4">Pricing</a></li>
+                    <li><a href="contact.html" class="a5">Contact</a></li>
+                </ul>
+                <div class="header_icons2">
+                    <a><i class="fa-regular fa-bell"></i></a>
+                    <a><i class="fa-solid fa-gear"></i></a>
+                    <a><i class="fa-regular fa-circle-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid work_part1">
+    <div class="row">
+        <div class="col-lg-12 work_part1_block col-md-12 col-sm-12 col-xs-12">
+            <div class="work_part1_text">
+                <h1>Our Work</h1>
+                <div class="work_part1_line"></div>
+                <span>Elit, sed do eiusmod tempor incididunt</span>
+                <p>Vector illustration Freepik. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+                    commodo viverra maecenas accumsan lacus.</p>
+                <div class="work_part1_buttons">
+                    <button class="work_part1_btn1">Learn More</button>
+                    <button class="work_part1_btn2">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid work_part2">
+    <div class="row">
+        <div class="col-lg-12 work_part2_block col-md-12 col-sm-12 col-xs-12">
+            <ul class="work_part2_ul">
+                <li><a id="part2_all" onclick="work_card(this)" class="part2_a1" href="#work_part2">All</a></li>
+                <li><a id="part2_bus" onclick="work_card(this)" class="part2_a1" href="#work_part2">Business</a></li>
+                <li><a id="part2_mark" onclick="work_card(this)" class="part2_a1" href="#work_part2">Marketing</a></li>
+                <li><a id="part2_social" onclick="work_card(this)" class="part2_a1" href="#work_part2">Social Media</a>
+                </li>
+                <li><a id="part2_graphic" onclick="work_card(this)" class="part2_a1" href="#work_part2">Graphic</a></li>
+            </ul>
+            <div class="work_part2_cards_all">
+                <div class="work_part2_card1">
+                    <img class="work_part2_card_img" src="./images/work_img2.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Digital Marketing</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card2">
+                    <img class="work_part2_card_img" src="./images/work_img3.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Corporate Branding</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card3">
+                    <img class="work_part2_card_img" src="./images/work_img4.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Leading Digital Solution</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card4">
+                    <img class="work_part2_card_img" src="./images/work_img5.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Leading Digital Solution</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card5">
+                    <img class="work_part2_card_img" src="./images/work_img6.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Corporate Stationary</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card6">
+                    <img class="work_part2_card_img" src="./images/work_img7.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Corporate Stationary</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work_part2_cards_business">
+                <div class="work_part2_card1">
+                    <img class="work_part2_card_img" src="./images/work_img2.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Digital Marketing</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card3">
+                    <img class="work_part2_card_img" src="./images/work_img4.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Leading Digital Solution</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card4">
+                    <img class="work_part2_card_img" src="./images/work_img5.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Leading Digital Solution</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work_part2_cards_marketing">
+                <div class="work_part2_card1">
+                    <img class="work_part2_card_img" src="./images/work_img2.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Digital Marketing</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card3">
+                    <img class="work_part2_card_img" src="./images/work_img4.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Leading Digital Solution</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card5">
+                    <img class="work_part2_card_img" src="./images/work_img6.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Corporate Stationary</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card6">
+                    <img class="work_part2_card_img" src="./images/work_img7.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Corporate Stationary</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work_part2_cards_social">
+                <div class="work_part2_card1">
+                    <img class="work_part2_card_img" src="./images/work_img2.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Digital Marketing</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card2">
+                    <img class="work_part2_card_img" src="./images/work_img3.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Corporate Branding</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card4">
+                    <img class="work_part2_card_img" src="./images/work_img5.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Leading Digital Solution</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work_part2_cards_graphic">
+                <div class="work_part2_card2">
+                    <img class="work_part2_card_img" src="./images/work_img3.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Corporate Branding</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card3">
+                    <img class="work_part2_card_img" src="./images/work_img4.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Leading Digital Solution</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="work_part2_card6">
+                    <img class="work_part2_card_img" src="./images/work_img7.jpg">
+                    <div class="work_part2_card_text">
+                        <span>Corporate Stationary</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore
+                        </p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid work_part3">
+    <div class="row">
+        <div class="col-lg-12 work_part3_block col-md-12 col-sm-12 col-xs-12">
+            <div class="work_part3_text">
+                <span>Featured Work</span>
+                <h1>Transform with us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                    accumsan lacus vel facilisis.</p>
+                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                    ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="work_part3_images">
+                <div class="work_part3_overflow">
+                    <img src="./images/work_img8.jpg">
+                </div>
+                <div class="work_part3_overflow">
+                    <img src="./images/work_img9.jpg">
+                </div>
+                <div class="work_part3_overflow">
+                    <img src="./images/work_img10.jpg">
+                </div>
+                <div class="work_part3_overflow">
+                    <img src="./images/work_img11.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="col-lg-12 footer_block col-md-12 col-sm-12 col-xs-12">
+            <div class="footer_block_1">
+                <div class="footer_left">
+                    <span>Purple Buzz</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut.</p>
+                    <div class="footer_left_icons">
+                        <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer_mid">
+                    <span>Our Company</span>
+                    <ul>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="about.html">About Us</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="work.html">Work</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="pricing.html">Price</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_right">
+                    <span>Our Works</span>
+                    <ul>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Branding</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Business</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Marketing</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Social Media</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Digital Solution</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="index.html">Graphic</a></li>
+                    </ul>
+                </div>
+                <div class="footer_contact">
+                    <span>For Client</span>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i><a href="index.html">010-020-0340</a></li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="index.html">info@company.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_block_2">
+                <div class="footer_block2_text">
+                    <div class="footer_block2_text1">
+                        <span>Copyright 2021 Purple Buzz Company. All Rights Reserved.</span>
+                    </div>
+                    <div class="footer_block2_text2">
+                        <span>Designed by TemplateMo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
