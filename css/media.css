@@ -52,7 +52,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		justify-content: center;
+		/*justify-content: center;*/
 		align-items: center;
 		margin-top: 20px;
 	}
@@ -102,19 +102,24 @@
 	    background-position: center center;
     	background-size: cover;
     	height: 100%;
-    	min-height: 60vh;
 	}
 	.carousel{
-		width: 67%;
+		width: 80%;
+		/*height: 100%;*/
+		border: 1px solid;
+	}
+	.slide{
+		width: 100%;
+		border: 1px solid;
 	}
 	.slide1_line{
 		width: 38%;
 	}
 	.slide_text span{
-		font-size: 40px;
+		font-size: 25px;
 	}
 	.slide_text p{
-		font-size: 15px;
+		font-size: 10px;
 	}
 	.slide_text button{
 		width: 40%;
@@ -124,22 +129,22 @@
 		top: 45%;
 	}
 	.nav-left{
-		left: -50px;
+		left: 50px;
 	}
 	.nav-right{
-		right: -50px;
+		right: 30px;
 	}
 	.home_part2_bottom{
 		width: 95%;
-		height: 190px;
+		height: 250px;
 		display: flex;
 		justify-content: space-between;
 	}
 	.home_part2{
-		height: 370px;	
+		height: 430px;
 	}
 	.home_part2_block{
-		height: 370px;	
+		height: 430px;
 	}
 	.home_part2_text{
 		width: 85%;
@@ -148,9 +153,10 @@
 		width: 15%;
 	}
 	.home_part3_ul{
-		width: 70%;
+		width: 95%;
 		justify-content: space-between;
 		padding: 0;
+		margin: 0;
 	}
 	.part3_a1{
 		margin-left: 10px;
@@ -226,7 +232,12 @@
 	}
 	.home_part5_mid{
 		width: 80%;
-		height: 100px;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 	.home_part5_right{
 		width: 50%;
@@ -306,6 +317,7 @@
 		height: 80px;
 		display: flex;
 		flex-direction: column;
+		text-align: center;
 	}
 	.footer_block2_text1{
 		width: 100%;
@@ -317,6 +329,7 @@
 		width: 100%;
 		height: 60px;
 		justify-content: center;
+		margin-top: 20px;
 	}
 	.about_part1{
 		height: 750px;
@@ -375,8 +388,9 @@
 		height: 910px;
 	}
 	.about_part3_block1{
-		width: 60%;
+		width: 80%;
 		height: 100px;
+		text-align: center;
 	}
 	.about_part3_block2{
 		width: 95%;
@@ -389,29 +403,25 @@
 		height: 140px;
 	}
 	.about_part4{
-		height: 530px;
+		height: 700px;
 	}
 	.about_part4_block{
-		height: 530px;
+		height: 700px;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-around;
 	}
 	.about_part4_left{
 		width: 95%;
-		height: 220px;
+		height: 170px;
 	}
 	.about_part4_left p{
 		width: 95%;
 	}
 	.about_part4_right{
 		width: 95%;
-		margin-top: 0;
-	}
-	.about_part4{
-		height: 810px;
-	}
-	.about_part4_block{
-		height: 810px;
+		height: 250px;
+		margin-top: 50px;
 	}
 	.about_part5_image{
 		height: 300px;
@@ -421,10 +431,10 @@
 	}
 	.about_part5_text{
 		width: 95%;
-		height: 230px;
+		height: 300px;
 	}
 	.about_part5_image img{
-		width: 460px;
+		width: 95%;
 		height: 460px;
 		top: -180px;
 		left: 0;
@@ -433,10 +443,10 @@
 		width:100%;
 	}
 	.about_part6{
-		height: 810px;
+		height: 860px;
 	}
 	.about_part6_block{
-		height: 810px;
+		height: 860px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -455,17 +465,26 @@
 		font-size: 35px;
 	}
 	.email_form button{
-		width: 25%;
+		width: 33%;
 	}
 	.about_part7_email p{
 		width: 90%;
 	}
 	.work_part1_text{
-		width: 95%;
-		height: 350px;
+		width: 80%;
+		height: 400px;
+	}
+	.work_part1_text p{
+		font-size: 14px;
 	}
 	.work_part1_buttons{
-		width: 55%;
+		width: 80%;
+	}
+	.work_part1_btn1{
+		width: 45%;
+	}
+	.work_part1_btn2{
+		width: 45%;
 	}
 	.work_part2{
 		height: 3800px;
@@ -475,7 +494,13 @@
 		padding: 0!important;
 	}
 	.work_part2_ul{
-		width: 100%;
+		padding: 0;
+		width: 98%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.part2_a1{
+		width: 90px;
 	}
 	.work_part2_cards_all{
 		width: 100%;
@@ -526,10 +551,11 @@
 		height: 370px;
 	}
 	.work_part3{
-		height: 1000px;
+		height: 1100px;
 	}
 	.work_part3_block{
-		height: 1000px;
+		height: 1100px;
+		padding: 0!important;
 		display: flex;
 		flex-direction: column;
 	}
@@ -543,11 +569,14 @@
 	}
 	.work_part3_images{
 		width: 95%;
-		height: 500px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		height: 420px;
 	}
 	.work_part3_images img{
-		width: 47%;
-		height: 205px;
+		width: 170px;
+		height: 175px;
 	}
 	.pricing_part1{
 		height: 1700px;
@@ -608,6 +637,13 @@
 		border-bottom-left-radius: 15px;
 		border-top-right-radius: 0;
 	}
+	.pricing_part2_card1_ul{
+		width: 40%;
+		height: 110px;
+	}
+	.pricing_part2_card1_btn{
+		width: 55%;
+	}
 	.pricing_part2_card1_text_button{
 		width: 50%;
 		height: 90px;
@@ -635,7 +671,7 @@
 		height: 530px;
 	}
 	.pricing_part3_image img{
-		width: 500px;
+		width: 350px;
 		height: 500px;
 	}
 	.pricing_part3_lists{
@@ -647,18 +683,18 @@
 		height: 200px;
 	}
 	.pricing_part3_list_btn2{
-		width: 22%;
+		width: 27%;
 		height: 37px;
 	}
 	.pricing_part3_list_btn3{
-		width: 22%;
+		width: 27%;
 		height: 37px;
 	}
 	.pricing_part3_list1_text{
 		text-align: center;
 	}
 	.pricing_part3_lists_btn4{
-		width: 22%;
+		width: 25%;
 		height: 37px;
 	}
 	.contact_part1{
@@ -685,10 +721,10 @@
 		height: 330px;
 	}
 	.contact_part2{
-		height: 1420px;
+		height: 1480px;
 	}
 	.contact_part2_block{
-		height: 1420px;
+		height: 1480px;
 		padding: 0!important;
 	}
 	.contact_part2_text{
@@ -706,6 +742,7 @@
 	}
 	.contact_part2_icons{
 		width: 95%;
+		margin-top: 50px;
 	}
 	.contact_part2_inputs{
 		width: 95%;
@@ -739,7 +776,7 @@
 		width: 95%;
 	}
 	.contact_part2_button button{
-		width: 35%;
+		width: 40%;
 	}
 }
 
@@ -1607,7 +1644,7 @@
 		height: 470px;
 	}
 	.work_part3_images img{
-		width: 47%;
+		width: 100%;
 		height: 220px;
 	}
 	.pricing_part1_text{
