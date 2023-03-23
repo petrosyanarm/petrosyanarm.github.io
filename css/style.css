@@ -283,10 +283,11 @@
  	position: relative;
   	overflow: hidden;
   	transition: width .4s;
-  	height: 100%;
+  	height: 600px;
 }
 .slide{
-  	height: 100%;
+	width: 100%;
+  	height: 600px;
   	position: absolute;
   	z-index: 1;
   	transition: left .4s cubic-bezier(.47,.13,.15,.89);
@@ -368,6 +369,7 @@
 .home_part2_block{
 	height: 337px;
 	display: flex;
+	padding: 0!important;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -424,6 +426,7 @@
 }
 .home_part3_block{
 	height: 136px;
+	padding: 0!important;
 	background: #6266ea;
 	display: flex;
 	justify-content: center;
@@ -473,6 +476,7 @@
 }
 .home_part4_block{
 	height: 800px;
+	padding: 0!important;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -918,6 +922,7 @@
 }
 .home_part6_block{
 	height: 1200px;
+	padding: 0!important;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1190,9 +1195,6 @@
 	transition: 0.5s;
 	text-decoration: none;
 	background: #8DA3B2;
-}
-.fa-brands fa-facebook-f{
-	margin-left: 5px;
 }
 .footer_mid{
 	width: 22%;
@@ -1493,7 +1495,7 @@
 	background:#b1b3f5;
 }
 .about_part4{
-	height: 400px;
+	height: 420px;
 }
 .about_part4_block{
 	height: 420px;

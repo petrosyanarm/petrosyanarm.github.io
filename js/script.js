@@ -85,22 +85,21 @@ $(function(){
 		$('#submit').click(function validate() {
 		let username = $('#username').val();
 		let password = $('#pass').val();
-	
+
  	 	if (username === "" || username === null) {
     		intensify($('#username'));
-				return false;
-  	}	
-  
-		if (password === "" || password === null) {
-				intensify($('#pass'));
+			return false;
+  	}
 
-					return false;
+		if (password === "" || password === null) {
+			intensify($('#pass'));
+			return false;
 		  }
 		})
 
 
 		function intensify() {
-				var x = document.createElement("span")
+				let x = document.createElement("span")
 				$(x).html("Invalid email format")
 				$(x).css("position","absolute")
 				$(x).css("fontSize","12px")
@@ -108,10 +107,10 @@ $(function(){
 				$(x).css("left","25px")
 				$(x).css("color","red")
 				$('#login_form').append(x)
-		};
+		}
 
 
-		
+
 })
 
 
@@ -156,7 +155,7 @@ var carouselContent = document.querySelector('.carousel-content');
 var slides = document.querySelectorAll('.slide');
 var arrayOfSlides = Array.prototype.slice.call(slides);
 var carouselDisplaying;
-var screenSize;
+// var screenSize;
 setScreenSize();
 var lengthOfSlide;
 
@@ -203,7 +202,7 @@ function setScreenSize() {
   if ( window.innerWidth >= 500 ) {
     carouselDisplaying = 1;
   } else if ( window.innerWidth >= 300 ) {
-    carouselDisplaying = 2;
+    carouselDisplaying = 1;
   } else {
     carouselDisplaying = 1;
   }
@@ -288,7 +287,7 @@ function slightMove(e) {
     var difference = initialX - movingX;
     if ( Math.abs(difference) < (lengthOfSlide/4) ) {
       slightMoveSlides(difference);
-    }  
+    }
   }
 }
 
@@ -297,7 +296,7 @@ function getInitialPos() {
   var slidesArray = Array.prototype.slice.call(slides);
   initialPos = [];
   slidesArray.forEach(function(el){
-    var left = Math.floor( parseInt( el.style.left.slice(0, -2 ) ) ); 
+    var left = Math.floor( parseInt( el.style.left.slice(0, -2 ) ) );
     initialPos.push( left );
   });
 }
@@ -311,7 +310,7 @@ function slightMoveSlides(newX) {
   });
 }
 
-function moveBasedOnMouse(e) { 
+function moveBasedOnMouse(e) {
   var finalX = e.clientX;
   if ( initialX - finalX > 0) {
     moveRight();

@@ -98,41 +98,47 @@
 		width: 450px;
 		height: 40px;
 	}
+	.home_part1{
+		height: 600px;
+	}
 	.home_part1_block{
+		padding: 0!important;
+		height: 600px;
 	    background-position: center center;
     	background-size: cover;
-    	height: 100%;
 	}
 	.carousel{
-		width: 80%;
-		/*height: 100%;*/
-		border: 1px solid;
+		width: 60%;
+		height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 	.slide{
 		width: 100%;
-		border: 1px solid;
 	}
 	.slide1_line{
 		width: 38%;
 	}
 	.slide_text span{
-		font-size: 25px;
+		font-size: 27px;
 	}
 	.slide_text p{
-		font-size: 10px;
+		font-size: 13px;
 	}
 	.slide_text button{
-		width: 40%;
-		height: 50px;
+		width: 60%;
+		font-size: 16px;
+		height: 30px;
 	}
 	.nav{
 		top: 45%;
 	}
 	.nav-left{
-		left: 50px;
+		left: -50px;
 	}
 	.nav-right{
-		right: 30px;
+		right: -40px;
 	}
 	.home_part2_bottom{
 		width: 95%;
@@ -162,6 +168,7 @@
 		margin-left: 10px;
 	}
 	#part3_all{
+		width: 35px;
 		margin-left: 0;
 	}
 	.home_part4{
@@ -413,7 +420,7 @@
 	}
 	.about_part4_left{
 		width: 95%;
-		height: 170px;
+		height: 270px;
 	}
 	.about_part4_left p{
 		width: 95%;
@@ -423,14 +430,18 @@
 		height: 250px;
 		margin-top: 50px;
 	}
+	.about_part4_progres{
+		width: 95%;
+	}
 	.about_part5_image{
+		width: 95%;
 		height: 300px;
 		display: flex;
 		align-items: flex-end;
 		justify-content: center;
 	}
 	.about_part5_text{
-		width: 95%;
+		width: 100%;
 		height: 300px;
 	}
 	.about_part5_image img{
@@ -941,6 +952,7 @@
 		margin-left: 10px;
 	}
 	#part3_all{
+		width: 30px;
 		margin-left: 0;
 	}
 	.home_part4{
@@ -973,7 +985,7 @@
 		flex-wrap: wrap;
 	}
 	.image1,.image2,.image3,.image4,.image5,.image6,.image7,.image8{
-		width: 32%;
+		/*width: 32%;*/
 		height: 230px;
 		background-size: 100% 230px;
 	}
